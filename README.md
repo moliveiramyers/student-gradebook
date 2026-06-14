@@ -1,188 +1,37 @@
-# Student Gradebook Application
+# Overview
 
-## Overview
+As a software engineer, I am continually expanding my knowledge of programming languages and software development practices. The purpose of this project was to learn the fundamentals of Java, including object-oriented programming, collections, file handling, loops, conditionals, and methods.
 
-This project is a Student Gradebook application developed in Java. The program allows users to add students, record grades, calculate averages, determine pass/fail status, and save/load data from a file.
+The software I developed is a Student Gradebook application. The program allows users to add students, record grades, calculate average grades, determine pass/fail status, and save or load data from a file. The application uses a menu-driven interface that allows users to interact with the system through the console.
 
-The application uses object-oriented programming principles and demonstrates the required Java concepts for this module.
+My purpose for creating this software was to gain hands-on experience with Java and understand how its syntax and object-oriented design differ from other languages I have used. Through this project, I learned how to organize code into classes, work with collections such as ArrayLists, and perform file input/output operations.
 
----
+[Software Demo Video](https://www.loom.com/share/a5bfcc01daae4e17bd528b6821b44580)
 
-## Features
+# Development Environment
 
-* Add new students
-* View all students
-* Add grades to students
-* Calculate student averages
-* Display pass/fail status
-* Save student data to a file
-* Load student data from a file when the program starts
+The software was developed using Visual Studio Code as the primary code editor. Git and GitHub were used for version control and project management.
 
----
+The project was written in Java using the Java Development Kit (JDK). The application uses several standard Java libraries, including:
 
-## Technologies Used
+* java.util.ArrayList
+* java.util.Scanner
+* java.io.FileWriter
+* java.io.FileReader
+* java.io.BufferedReader
+* java.io.IOException
 
-* Java
-* Java Collections Framework (ArrayList)
-* File I/O (FileReader, BufferedReader, FileWriter)
-* Object-Oriented Programming
+# Useful Websites
 
----
+* https://docs.oracle.com/en/java/
+* https://www.w3schools.com/java/
+* https://www.baeldung.com/
+* https://github.com/moliveiramyers/student-gradebook
 
-## Program Structure
+# Future Work
 
-### Models
-
-**Student**
-
-* Stores student information
-* Stores grades
-* Calculates average grades
-
-### Services
-
-**GradebookService**
-
-* Manages student records
-* Adds students
-* Adds grades
-* Exports and imports data
-
-### Views
-
-**MenuView**
-
-* Displays menu options to the user
-
-### Utilities
-
-**FileManager**
-
-* Saves data to a file
-* Loads data from a file
-
----
-
-## Requirements Demonstrated
-
-### Variables
-
-Variables are used throughout the project to store names, grades, menu choices, averages, and collections.
-
-Example:
-
-```java
-String name;
-double grade;
-int choice;
-```
-
-### Expressions
-
-Expressions are used when calculating averages.
-
-Example:
-
-```java
-return total / grades.size();
-```
-
-### Conditionals
-
-Conditionals are used to validate choices and determine pass/fail status.
-
-Example:
-
-```java
-if(student.calculateAverage() >= 10)
-```
-
-### Loops
-
-Loops are used for menu navigation and processing collections.
-
-Example:
-
-```java
-while(choice != 0)
-```
-
-and
-
-```java
-for(Student student : students)
-```
-
-### Functions
-
-Methods are used throughout the project.
-
-Examples:
-
-```java
-addStudent()
-addGrade()
-showStudents()
-calculateAverage()
-```
-
-### Classes
-
-The project contains multiple classes:
-
-* Student
-* GradebookService
-* MenuView
-* FileManager
-* Main
-
-### Java Collection Framework
-
-The application uses ArrayList to store students and grades.
-
-Example:
-
-```java
-ArrayList<Student> students
-ArrayList<Double> grades
-```
-
-### Read and Write to File
-
-The application saves and loads student data using text files.
-
-Examples:
-
-```java
-FileWriter
-FileReader
-BufferedReader
-```
-
----
-
-## How to Run
-
-1. Open the project in Visual Studio Code.
-2. Ensure Java JDK is installed.
-3. Compile the project.
-4. Run Main.java.
-5. Use the menu options to manage students and grades.
-
----
-
-## Future Improvements
-
-* Delete students
-* Edit grades
-* Search for students
-* Sort students by average
-* Graphical User Interface (GUI)
-
----
-
-## Author
-
-Marjorie Myers
-
-Java Module Project
+* Add the ability to delete students from the gradebook.
+* Allow users to edit existing grades.
+* Improve file storage by using a structured format such as CSV or JSON.
+* Add student search functionality.
+* Create a graphical user interface instead of a console-based interface.
